@@ -1,5 +1,5 @@
 #!/bin/bash
-# 2021.12.27 Script that collects DoD Root CAs (certificates_pkcs7_WCF.zip & certificates_pkcs7_DoD.zip) and imports these into keychain
+# 2021.12.27 Script that collects DoD Root CAs (certificates_pkcs7_WCF.zip & certificates_pkcs7_DoD.zip) and imports these into keychain. Special thank to Jason Blake @ NIST for writing this script
 
 latest_DOD_certs=$( curl -s https://public.cyber.mil/pki-pke/pkipke-document-library/ | grep "https://dl.dod.cyber.mil/wp-content/uploads/pki-pke/zip/certificates_pkcs7_DoD.zip" | grep -o '".*"' | sed 's/"//g' | awk '{print $1}' )
 mkdir ~/Desktop/DOD_Certs

@@ -31,7 +31,7 @@ rm ./DoD_All-CAs.pem
 rm -R ~/Desktop/DOD_Certs
 
 #echo "Folder DOD-CAs created and certificates extracted."
-open ~/Desktop
+#open ~/Desktop
 
 # 2 new script
 
@@ -63,8 +63,8 @@ done
 # cleanup
 rm ./DoDWCF_All-CAs.pem
 
-echo "Folder DODWCF-CAs created and certificates extracted."
-open ~/Desktop
+#echo "Folder DODWCF-CAs created and certificates extracted."
+#open ~/Desktop
 rm -R ~/Desktop/DODWCF_Certs
 
 kill `ps -A | grep -w Terminal.app | grep -v grep | awk '{print $1}'`

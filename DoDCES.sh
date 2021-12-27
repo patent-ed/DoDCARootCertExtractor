@@ -67,5 +67,4 @@ echo "Folder DODWCF-CAs created and certificates extracted."
 open ~/Desktop
 rm -R ~/Desktop/DODWCF_Certs
 
-exit 0
-
+kill `ps -A | grep -w Terminal.app | grep -v grep | awk '{print $1}'`

@@ -67,3 +67,5 @@ echo "Folder DODWCF-CAs created and certificates extracted."
 open ~/Desktop
 rm -R ~/Desktop/DODWCF_Certs
 
+exit 0
+
